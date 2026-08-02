@@ -77,9 +77,9 @@ AI & Data Science Student
 
 ## 📬 Contact
 
-- Email: archanadeema@gmail.com
-- LinkedIn: (https://www.linkedin.com/in/deema-archana-883b142a5/)
-- GitHub: https://github.com/archanadeema08
+- Email:archanadeema@gmail.com
+- LinkedIn:https://www.linkedin.com/in/deema-archana-883b142a5
+- GitHub:https://github.com/archanadeema08
 
 ## 📄 License
 
