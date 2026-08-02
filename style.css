@@ -1,0 +1,293 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#490232);
+    color:#fff;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:#2563eb;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    width:80%;
+}
+
+.profile{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:10px;
+    color:white;
+}
+
+.hero h2{
+    color:#2563eb;
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.hero p{
+    width:70%;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    color:white;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:14px 35px;
+    background:white;
+    color:#2563eb;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
+    color:white;
+}
+
+/* ================= SECTION ================= */
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:45px;
+    color:white;
+    margin-bottom:40px;
+}
+
+.section-text{
+    text-align:center;
+    font-size:20px;
+    line-height:1.9;
+    color:white;
+}
+
+/* ================= SKILLS ================= */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:rgba(255,255,255,.20);
+    backdrop-filter:blur(10px);
+    border-radius:18px;
+    padding:40px;
+    text-align:center;
+    transition:.4s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 30px rgba(0,0,0,.20);
+}
+
+.skill-card i{
+    font-size:55px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.skill-card h3{
+    color:white;
+}
+
+/* ================= PROJECTS ================= */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:rgba(255,255,255,.20);
+    backdrop-filter:blur(10px);
+    border-radius:18px;
+    padding:35px;
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+.project-card p{
+    color:white;
+    line-height:1.8;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-box{
+    background:rgba(255,255,255,.20);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+}
+
+.contact-box p{
+    color:white;
+    font-size:20px;
+    margin:20px 0;
+}
+
+.contact-box i{
+    color:#2563eb;
+    margin-right:10px;
+}
+
+.social{
+    margin-top:30px;
+}
+
+.social a{
+    color:white;
+    font-size:35px;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#2563eb;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.nav-links li{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero h2{
+    font-size:26px;
+}
+
+.hero p{
+    width:100%;
+}
+
+.profile{
+    width:170px;
+    height:170px;
+}
+
+.section-title{
+    font-size:35px;
+}
+
+}
